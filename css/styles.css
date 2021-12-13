@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(27, 26, 26);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    color: greenyellow;
+}
+
+.estrella{
+    font-size: 100px;
+    animation: colores 1s infinite;
+}
+
+#arbol{
+    
+}
+
+.rojo{
+    color: red;
+    transition: all 1.5s;
+    font-size: 30px;
+}
+
+@keyframes colores{
+    0%{
+        color: red;
+    }
+    33%{
+        color: blue;
+    }
+    66%{
+        color: purple;
+    }
+    100%{
+        color: green;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 20px;
+    }
+    .rojo{
+        font-size: 20px;
+    }
+    .estrella{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    h1{
+        font-size: 10px;
+    }
+}
